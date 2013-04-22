@@ -1,0 +1,14 @@
+%p#id
+	=notice
+%p
+	%b Date:
+	= @livraison.date
+%p
+	%b Adresse:
+	= @livraison.adresse
+
+
+
+= link_to 'Edit', edit_livraison_path(@livraison)
+%p |
+= link_to 'Back', livraisons_path

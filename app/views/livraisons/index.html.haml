@@ -1,0 +1,38 @@
+%h1 Listing livraisons
+%p DATE COURANTE:   
+= Time.now
+
+%table
+  %tr
+    %th Date
+    %th Adresse
+    %th id
+    %th Vehicule_id
+    %th CREATION
+
+  - @livraisons.each do |livraison|
+    %tr
+      %td 
+        = livraison.date
+      %td 
+        = livraison.adresse
+      %td 
+        = livraison.id
+      %td 
+        = livraison.vehicule_id
+      %td
+        = livraison.created_at
+      %td 
+        = link_to 'Show', livraison
+      %td 
+        = link_to 'Edit', edit_livraison_path(livraison)
+      %td 
+        = link_to 'Destroy', livraison, method: :delete, data: { confirm: 'Are you sure?' } 
+    
+%br
+
+
+= link_to 'New Livraison', new_livraison_path 
+= link_to 'retour', :back 
+= link_to 'vehicule', vehicules_path 
+

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+#one:
+ # date: 2013-04-06 15:54:27
+  #adresse: MyText
+
+#two:
+  #date: 2013-04-06 15:54:27
+  #adresse: MyText
