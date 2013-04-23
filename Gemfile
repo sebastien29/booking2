@@ -5,7 +5,7 @@ gem 'pg'
 gem 'taps'
 gem 'mailjet'
 gem "factory_girl_rails", "~> 4.0"
-
+gem "haml"
 
 
 
@@ -27,7 +27,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'bootstrap-sass'
   gem 'therubyracer'
-  gem "haml"
+
 
   #gem "postgres", "~> 0.8.1"
 
