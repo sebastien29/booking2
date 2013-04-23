@@ -6,9 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'sqlite3-ruby', '1.3.7', :group => :development
-#gem install sqlite3 -v '1.3.7'
-#gem install sqlite3 -v '1.3.7'
+#gem 'sqlite3', '1.3.2', :group => :development
 
 
 
