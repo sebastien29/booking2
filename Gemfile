@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3', :group => :development
 #gem 'sqlite3-ruby', '1.3.2', :group => :development
+gem 'heroku'
 
 gem 'pg', :group => :production
 group :development do
