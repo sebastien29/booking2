@@ -1,15 +1,19 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+gem 'sqlite3'
+gem 'pg'
+gem 'taps'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', :group => :development
+gem 'sqlite3', :group => :production
 #gem 'sqlite3-ruby', '1.3.2', :group => :development
 gem 'heroku'
 
-gem 'pg', :group => :production
+gem 'pg', :group => :development
 group :development do
   gem 'sqlite3-ruby', :require => 'sqlite3'
 end
@@ -24,6 +28,7 @@ group :assets do
   gem "haml"
   gem "factory_girl_rails", "~> 4.0"
   gem 'mailjet'
+  #gem "postgres", "~> 0.8.1"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
