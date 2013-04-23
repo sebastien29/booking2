@@ -16,6 +16,7 @@ gem "factory_girl_rails", "~> 4.0"
 gem 'heroku'
 
 group :development do
+  gem 'sqlite3'
   gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
