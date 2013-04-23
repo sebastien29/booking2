@@ -44,6 +44,10 @@ class VehiculesController < ApplicationController
 
     respond_to do |format|
       if @vehicule.save
+
+        campaign = Mailjet::Campaign.create(title: "Ma premiere campagne", list_id: Mailjet::List.all.first.id, from: "sebastien@nectify.com", from_name: "Nectify", subject: "mon nouveau produiut", lang: "en", footer: "default")
+        campaign.test('demailly.sebastien@gmail.com')
+
         format.html { redirect_to @vehicule, notice: 'Vehicule was successfully created.' }
         format.json { render json: @vehicule, status: :created, location: @vehicule }
       else
