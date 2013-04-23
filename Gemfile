@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'pg'
 gem 'taps'
+gem 'mailjet'
+gem "factory_girl_rails", "~> 4.0"
 
 
 # Bundle edge Rails instead:
@@ -23,8 +25,7 @@ group :assets do
   gem 'bootstrap-sass'
   gem 'therubyracer'
   gem "haml"
-  gem "factory_girl_rails", "~> 4.0"
-  gem 'mailjet'
+
   #gem "postgres", "~> 0.8.1"
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
