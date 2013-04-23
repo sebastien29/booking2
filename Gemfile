@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'sqlite3'
 gem 'pg'
 gem 'taps'
 
@@ -9,11 +8,9 @@ gem 'taps'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', :group => :production
 #gem 'sqlite3-ruby', '1.3.2', :group => :development
 gem 'heroku'
 
-gem 'pg', :group => :development
 group :development do
   gem 'sqlite3-ruby', :require => 'sqlite3'
 end
