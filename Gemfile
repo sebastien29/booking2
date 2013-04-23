@@ -6,7 +6,8 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
-gem 'sqlite3-ruby', '1.3.2', :group => :development
+#gem 'sqlite3-ruby', '1.3.2', :group => :development
+gem install sqlite3 -v '1.3.7'
 
 
 # Gems used only for assets and not required
