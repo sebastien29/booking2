@@ -6,57 +6,59 @@ $backcolor: #96DFF1
   $col:color
   #{$vert}-#{$col}: #{$backcolor}
 body
+  text-align: center
   @include background-color
   color: $main-color
   font-family: verdana, arial, helvetica, sans-serif
   font-size: 13px
   line-height: 18px
 
-p, ol, ul, td 
+p, ol, ul, td
   font-family: verdana, arial, helvetica, sans-serif
-  font-size: 13px
+  font-size: 16px
   line-height: 18px
+  color: gray
 
 
-pre 
-  background-color: #eee
+pre
+  background-color: $backcolor
   padding: 10px
   font-size: 11px
 
 
-a 
-  color: #000
-  &:visited 
-    color: #666
-  
-  &:hover
+a
+  color: $backcolor
+  &:visited
     color: $backcolor
-    background-color: #000
-  
+
+  &:hover
+    color: #FFF
+    //background-color: #000
+
 
 
 div
   &.field, &.actions
     margin-bottom: 10px
 
-#notice 
+#notice
   color: green
 
 
-.field_with_errors 
+.field_with_errors
   padding: 2px
   background-color: red
   display: table
 
-#error_explanation 
+#error_explanation
   width: 450px
   border: 2px solid red
   padding: 7px
   padding-bottom: 0
   margin-bottom: 20px
   background-color: #f0f0f0
-  
-  h2 
+
+  h2
     text-align: left
     font-weight: bold
     padding: 5px 5px 5px 15px
@@ -65,9 +67,11 @@ div
     margin-bottom: 0px
     background-color: #c00
     color: $backcolor
-  
-  ul li 
+
+  ul li
     font-size: 12px
     list-style: square
-  
+
+  h5
+    font-size: 100px
 

@@ -1,27 +1,58 @@
-%h1 booking2
-%p les premieres étapes
+//%h1 booking2
+//%p les premieres étapes
 
 
 
 
-= link_to "livraisons",livraisons_path
+//= link_to "livraisons",livraisons_path
 
-= link_to "vehicule", vehicules_path
-
-
+//= link_to "vehicule", vehicules_path
 
 
-</br>
 
-.btn.btn-info 
-	= link_to "livraisons", livraisons_path
-	.icon-white.icon-tag
-	%i Livraison
 
-.btn.btn-info 
-	= link_to "vehicues", vehicules_path
-	.icon-white.icon-tag
-	%i Véhicule
+//</br>
+
+//.btn.btn-info
+// = link_to "livraisons", livraisons_path
+//.icon-white.icon-tag
+// %i Livraison
+
+//.btn.btn-info
+//= link_to "vehicues", vehicules_path
+//.icon-white.icon-tag
+// %i Véhicule
+
+
+//%h3 Project name
+
+.container
+  //.masthead.muted
+  //%h3 Project name
+
+  //.navbar.navbar-inner.container.nav
+  //%li
+  // %a
+  //  =link_to "livraisons", livraisons_path
+  // %li
+  //%a
+  //=link_to "Véhicule", vehicules_path
+
+
+  .jumbotron
+    %h1 Booking2
+    %br
+    %br
+    .lead
+      Le but est de créer une application permettant de saisir de gérer une flotte de véhicules ayant à effectuer des livraisons. L'application, simple, doit permettre de saisir des véhicules et des livraisons. Une fois le véhicule occupé sur une livraison, celui est indisponible pour 2h.
+    %br
+    %br
+    %br
+
+    .btn.btn-large.btn-success
+      =link_to "Liste des livraisons", livraisons_path
+    .btn.btn-large.btn-success
+      =link_to "Liste des Véhicules", vehicules_path
 
 
 

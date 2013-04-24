@@ -1,38 +1,60 @@
-%h1 Listing livraisons
-%p DATE COURANTE:   
+
+%h5 Liste des livraisons
+%br
+%br
+%p DATE COURANTE:
 = Time.now
 
 %table
   %tr
-    %th Date
-    %th Adresse
-    %th id
-    %th Vehicule_id
-    %th CREATION
+    %th
+      %h2 Date
+    %th
+      %h2 Adresse
+    %th
+      %h2 clé
+    %th
+      %h2 Vehicule
+    %th
+      %h2 Date de creation
 
   - @livraisons.each do |livraison|
     %tr
-      %td 
+      %td
         = livraison.date
-      %td 
+      %td
         = livraison.adresse
-      %td 
+      %td
         = livraison.id
-      %td 
+      %td
         = livraison.vehicule_id
       %td
         = livraison.created_at
-      %td 
-        = link_to 'Show', livraison
-      %td 
-        = link_to 'Edit', edit_livraison_path(livraison)
-      %td 
-        = link_to 'Destroy', livraison, method: :delete, data: { confirm: 'Are you sure?' } 
-    
+      %td
+        .btn.btn-small.btn-success
+          = link_to 'Voir', livraison
+      %td
+        .btn.btn-small.btn-success
+          = link_to 'Modifier', edit_livraison_path(livraison)
+      %td
+        .btn.btn-small.btn-success
+          = link_to 'Supprimer', livraison, method: :delete, data: { confirm: 'Etes-vous sur de vouloir supprimer la livraison ?' }
+
 %br
 
+.btn.btn-info.btn-success
+  = link_to 'Nouvelle Livraison', new_livraison_path
+.btn.btn-info.btn-success
+  = link_to 'retour', :back
+.btn.btn-info.btn-success
+  = link_to 'Liste des véhicules', vehicules_path
 
-= link_to 'New Livraison', new_livraison_path 
-= link_to 'retour', :back 
-= link_to 'vehicule', vehicules_path 
+
+%br
+%br
+%br
+.btn.btn-large.btn-success
+  =link_to "page d'accueil",  root_path
+
+=image_tag("iamge2.jpg", :alt => "Une image")
 

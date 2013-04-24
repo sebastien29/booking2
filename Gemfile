@@ -7,6 +7,7 @@ gem 'mailjet'
 gem "factory_girl_rails", "~> 4.0"
 gem "haml"
 
+gem 'bootstrap-sass'
 
 
 # Bundle edge Rails instead:
