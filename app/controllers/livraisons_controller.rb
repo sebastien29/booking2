@@ -60,12 +60,10 @@ class LivraisonsController < ApplicationController
       return
     end
 
-
-
     @livraison = Livraison.new(params[:livraison])
     @livraison.vehicule_id = v.id
 
-      
+
     respond_to do |format|
       if @livraison.save
         format.html { redirect_to @livraison, notice: 'Livraison was successfully created.' }
